@@ -63,6 +63,10 @@ html {
     background-color: var(--primary-color);
 }
 
+.current {
+    border-bottom: 2px solid var(--primary-color);
+}
+
 /* Header */
 
 header {
@@ -84,6 +88,7 @@ header {
 
 #navbar ul li {
     font-size: 1.25rem;
+    padding-bottom: 0.25rem;
 }
 
 #navbar ul li a {
@@ -187,7 +192,7 @@ main .showcase h1 span {
 
 .facility:nth-child(2) {
     background-color: var(--primary-color);
-    color: var(--light);
+    opacity: 0.9;
 }
 
 footer {
@@ -196,4 +201,102 @@ footer {
     padding: 2rem 0;
     background-color: var(--dark);
     color: var(--light);
+}
+
+/* About page */
+
+.about-hotel .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.about-hotel .container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-hotel .container h1 span {
+    font-size: 3rem;
+}
+
+.about-hotel .container p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.about-hotel .container div:nth-child(2) img {
+    border-radius: 50%;
+    height: 50%;
+}
+
+.guest-feedback {
+    background: url('./images/photo-3.jpg');
+    background-color: var(--primary-color);
+    background-position: bottom 20% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    padding: 2rem 0;
+}
+
+.guest-feedback .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+.guest-feedback h1 {
+    font-size: 2.5rem;
+}
+
+.guest-feedback .container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem
+}
+
+.guest-feedback .container article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--primary-color);
+    padding: 1.5rem 0.75rem;
+    border-radius: 1rem;
+}
+
+.guest-feedback .container img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.contact {
+    padding: 2rem 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.contact form p {
+    font-size: 1.1rem;
+}
+
+.contact form input {
+    padding: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 80%;
 }
